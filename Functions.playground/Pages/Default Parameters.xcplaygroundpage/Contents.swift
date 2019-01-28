@@ -10,3 +10,11 @@ calculatePriceForMealWithTip(priceOfMeal: 100.32, tipPercentage: 0.20)
 calculatePriceForMealWithTip(priceOfMeal: 65.43)
 calculatePriceForMealWithTip(priceOfMeal: 22.18)
 //: [Next](@next)
+
+func endOfYearBonus(basePay: Double, bonus: Double, percentBonus: Double = 0.10)
+    -> Double{
+        return basePay + bonus + (basePay * percentBonus)
+}
+
+print(endOfYearBonus(basePay: 200000, bonus: 50000))
+
