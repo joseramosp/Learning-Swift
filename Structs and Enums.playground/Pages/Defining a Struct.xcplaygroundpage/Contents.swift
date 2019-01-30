@@ -20,3 +20,9 @@ struct Point2D {
     var y: Int = 0
 }
 //: [Next](@next)
+
+struct Author{
+    let firstName: String
+    let lastName: String
+    var living: Bool
+}
