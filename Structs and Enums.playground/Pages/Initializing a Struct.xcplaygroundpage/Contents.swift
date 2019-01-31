@@ -20,4 +20,16 @@ struct Point2D {
 
 var characterPosition = Point2D(x: 10, y: 10)
 let udacityCoordinates = GeoLocation(latitude: 37.400073, longitude: -122.108400)
+
 //: [Next](@next)
+
+struct Movie {
+    let title: String
+    let year: Int
+}
+// ↓ your code here ↓
+
+let myMovie = Movie(title: "A bronx tale", year: 1993)
+
+characterPosition.x = 20
+characterPosition.y = 5
