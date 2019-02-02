@@ -5,7 +5,7 @@
 //    let length: String
 //    var artistAge: Int
 //    let artistFirstName: String
-//    let artistLastName: String
+//    let artistLastName: String 
 //    let artistHometown: String
 //}
 struct Artist {
@@ -48,3 +48,22 @@ let beaker1 = Beaker(volumeMilliliters: 500)
 let beaker2 = Beaker(volumeMilliliters: 1000)
 Beaker.madeIn = "Japan"
 //: [Next](@next)
+
+struct Product {
+    
+    let name: String
+    var price: Double
+    
+    mutating func discount(){
+        price -= 0.10
+    }
+    
+    var formattedPrice: String {
+        return "$\(price)"
+    }
+}
+
+struct Team {
+    var name: String
+}
+
