@@ -65,5 +65,26 @@ struct Product {
 
 struct Team {
     var name: String
+    var stadium: String
 }
+
+struct Athlete {
+    let name: String
+    let hometown: String
+    var currentTeam: Team
+    var age: Int
+}
+
+var licey = Team(name: "Licey", stadium: "Estadio Quisquella")
+var jose = Athlete(name: "Jose Ramos", hometown: "Santo Domingo, DR", currentTeam: licey, age: 22)
+
+licey.name = "Los Tigres del Licey"
+
+var myFavoriteTeam = Team(name: "Leones del Escogido", stadium: "Estadio Quisqueya")
+
+myFavoriteTeam = licey
+
+jose.age = 23;
+
+jose.currentTeam = Team(name: "Los Toros del Este", stadium: "Estadio Francisco Micheli")
 

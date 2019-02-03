@@ -17,8 +17,8 @@ while (!(dieRoll1 == 1 && dieRoll2 == 1)) {
 }
 
 while (true) {
-    var dieRoll1 = Int(arc4random() % 6) + 1
-    var dieRoll2 = Int(arc4random() % 6) + 1
+    let dieRoll1 = Int(arc4random() % 6) + 1
+    let dieRoll2 = Int(arc4random() % 6) + 1
     print("\(dieRoll1), \(dieRoll2)")
     if dieRoll1 == 1 && dieRoll2 == 1 {
         break
