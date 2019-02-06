@@ -24,3 +24,17 @@ struct Song {
 func getArtistGenre(song: Song) -> String {
     return song.artist?.primaryGenre?.rawValue ?? ""
 }
+
+
+
+//func getArtistGenre(song: Song) -> String? {
+//
+//    if let artist = song.artist {
+//        let genre = artist.primaryGenre?.rawValue ?? ""
+//        return genre
+//    }
+//    else{
+//        return ""
+//    }
+//}
+
