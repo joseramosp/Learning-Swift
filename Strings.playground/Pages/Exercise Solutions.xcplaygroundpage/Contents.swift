@@ -28,8 +28,8 @@ func remove(input: String, first: Int, last: Int) -> String {
     return newString
 }
 
-/*  My own version
-func remove(input: String, first: Int, last: Int) -> String {
+// My own version
+func remove2(input: String, first: Int, last: Int) -> String {
     // we require a variable to manipulate strings
     var newString = input
     
@@ -52,5 +52,5 @@ func remove(input: String, first: Int, last: Int) -> String {
     
 }
 
-print(remove(input: "Hola soy Jose y soy un maestro pokemon", first: 9, last: 7))
-*/
+print(remove2(input: "Hola soy Jose y soy un maestro pokemon", first: 9, last: 7))
+
