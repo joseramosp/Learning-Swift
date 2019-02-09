@@ -37,3 +37,15 @@ if let groupOfSasquatches = animalGroupsDict["Sasquatches"] {
     print("No value found for that key.")
 }
 //: [Next](@next)
+
+func frequency(numbers: [Int]) -> [Int: Int] {
+    var output = [ 1: numbers[1]]
+    for n in 2...numbers.count {
+        output[n] = numbers[n]
+    }
+    return output
+}
+
+let input = [1, 3, 1, 1, 2, 7, 3, 5, 8, 5, 4, 9]
+
+frequency(numbers: input)
