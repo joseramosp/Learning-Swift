@@ -39,13 +39,19 @@ if let groupOfSasquatches = animalGroupsDict["Sasquatches"] {
 //: [Next](@next)
 
 func frequency(numbers: [Int]) -> [Int: Int] {
-    var output = [ 1: numbers[1]]
-    for n in 2...numbers.count {
-        output[n] = numbers[n]
+    var output = [Int:Int]()
+    for n in numbers {
+        if let num = output[n]
+        {
+            output[n] = num + 1
+        }
+        else {
+            output[n] = 1
+        }
     }
     return output
 }
 
 let input = [1, 3, 1, 1, 2, 7, 3, 5, 8, 5, 4, 9]
 
-frequency(numbers: input)
+print(frequency(numbers: input))
