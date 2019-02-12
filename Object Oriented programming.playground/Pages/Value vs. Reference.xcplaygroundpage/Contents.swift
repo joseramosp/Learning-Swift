@@ -29,7 +29,7 @@ func prepareForDuelingBanjos(musician: MusicianStruct) {
     musicianCopy.instrument = .banjo
 }
 //: instances of classes are passed by reference
-let fiddler = duo[0]
+var fiddler = duo[0]
 prepareForDuelingBanjos(musician: fiddler)
 fiddler.instrument
 //: instances of structs are passed by value
