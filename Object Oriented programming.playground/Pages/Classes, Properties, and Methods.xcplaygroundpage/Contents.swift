@@ -32,8 +32,11 @@ class MovieArchive {
 
 let movie1 = Movie(title: "Bride of Frankenstein", director: "James Whale", releaseYear: 1935)
 let movie2 = Movie(title: "The Night Walker", director: "William Castle", releaseYear: 1964)
+let movie3 = Movie(title: "Fast and Furious", director: "Rob Cohen", releaseYear: 2001)
 
-let archive = MovieArchive(movies: [movie1, movie2])
+let archive = MovieArchive(movies: [movie1, movie2, movie3])
 archive.filterByYear(year: 1935)
 archive.movies
+print(archive.movies[2].title)
+
 //: [Next](@next)
